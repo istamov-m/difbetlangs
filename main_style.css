@@ -1296,6 +1296,11 @@ footer{
         font-size: 30px;
         margin-bottom: 1em;
     }
+
+    .syn {
+        height: 7em;
+        width: 18em;
+    }
     
     .btn-lang a {
         display: flex;
