@@ -56,10 +56,10 @@ btn[0].addEventListener("mouseout", function(){
 //     document.querySelector(".input-lang").classList.add("input-lang-change-position");
 // })
 
-document.querySelector(".exit").addEventListener("click", function(){
-    searchPage.classList.add("hide-input-info");
-    document.querySelector(".input-lang").classList.remove("input-lang-change-position");
-})
+// document.querySelector(".exit").addEventListener("click", function(){
+//     searchPage.classList.add("hide-input-info");
+//     document.querySelector(".input-lang").classList.remove("input-lang-change-position");
+// })
 
 inputForSearch[0].addEventListener("click", function() {
     searchPage.classList.remove("hide-input-info");
