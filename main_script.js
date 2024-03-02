@@ -33,6 +33,11 @@ for(let i = 0; i < btn.length; i++) // появление левой панел�
     });
 }
 
+btn[0].addEventListener("click", function(){
+    searchPage.classList.add("hide-input-info");
+})
+
+
 btn[0].addEventListener("mouseover", function(){
     // btn[0].children.forEach(elements => {
     //     elements.classList.add("three-lines");
@@ -48,22 +53,11 @@ btn[0].addEventListener("mouseout", function(){
     }
 })
 
-
-// document.querySelecwtor(".open-search-page").addEventListener("click", function(){
-//     searchPage.classList.remove("hide-input-info");
-//     document.querySelector(".open-search-page").classList.add("input-lang-change")
-//     document.querySelector("header").style.zIndex = "8"
-//     document.querySelector(".input-lang").classList.add("input-lang-change-position");
-// })
-
-// document.querySelector(".exit").addEventListener("click", function(){
-//     searchPage.classList.add("hide-input-info");
-//     document.querySelector(".input-lang").classList.remove("input-lang-change-position");
-// })
-
 inputForSearch[0].addEventListener("click", function() {
+    bar.classList.remove('right-bar');
+    document.querySelector('.dark-bg-off').classList.remove('dark-bg-on');
     searchPage.classList.remove("hide-input-info");
-    document.querySelector("header").style.zIndex = "8"
+    document.querySelector("header").style.zIndex = "8";
 })
 
 searchPage.addEventListener("click", function(){
