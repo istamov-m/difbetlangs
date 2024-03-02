@@ -1091,7 +1091,10 @@ footer{
 
 @media screen and (max-width: 1400px) {
     body{
-        /* background: green; */
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        /* overflow-y: hidden; */
     }
 
     .search-page-bg{
@@ -1105,13 +1108,22 @@ footer{
         margin: 0;
     }
 
+    .logo{
+        width: 200px;
+        height: 200px;
+    }
+
+    .bg-img h1 {
+        font-size: 25px;
+    }
+
     .left-bar {
         transform:translateX(-100%);
         display: flex;
         position: fixed;
         flex-direction: column;
         background: #222222;
-        top: 79px;
+        top: 60px;
         width: 100%;
         height: 100%;
         z-index: 2;
@@ -1142,7 +1154,7 @@ footer{
     
     .left-bar a p{
         margin: 0 0 0 50px;
-        font-size: 30px;
+        font-size: 20px;
     }
     
     .left-bar a:hover{
@@ -1163,11 +1175,11 @@ footer{
     }
 
     main {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     main h1{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .main-information {
@@ -1175,7 +1187,7 @@ footer{
         position: relative;
         /* left: 60px;
         right: 60px; */
-        width: 97%;
+        width: 85%;
         height: 30em;
         flex-direction: column;
         justify-content: center;
@@ -1192,7 +1204,8 @@ footer{
     .bg-btn1{
         margin: 0;
         border-radius: 5px;
-        height: 6em;
+        width: 5em;
+        height: 4em;
     }
     
     .vs-info {
@@ -1201,12 +1214,12 @@ footer{
 
     .input-lang {
         width: 6em;
-        height: 2em;
+        height: 1.5em;
         font-size: 30px;
     }
 
     .phone-size:focus{
-        width: 40em;
+        width: 100%;
     }
 
     .comp-page{
@@ -1214,8 +1227,8 @@ footer{
     }
     
     .short{
-        width: 97%;
-        height: 120em;
+        width: 85%;
+        height: 200em;
         display: flex;
         /* background: green; */
         flex-direction: column;
@@ -1291,6 +1304,7 @@ footer{
     .find-info {
         display: block;
         text-align: center;
+        padding: 0;
         width: 90%;
         height: 2em;
         font-size: 30px;
@@ -1298,8 +1312,8 @@ footer{
     }
 
     .syn {
-        height: 7em;
-        width: 18em;
+        height: 4em;
+        width: 20em;
     }
     
     .btn-lang a {
