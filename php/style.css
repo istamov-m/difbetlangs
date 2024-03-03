@@ -1,5 +1,5 @@
 .bg-img{
-    background-image: url(assets/c-bg.png);
+    background-image: url(assets/php-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -73,6 +73,10 @@ header button{
 
 #on-that-language:hover {
     transform: translateY(0);
+}
+
+.info a img{
+    filter: drop-shadow(0 0 13px #777bb3);
 }
 
 @media screen and (max-width: 1400px) {

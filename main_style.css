@@ -635,6 +635,7 @@ footer{
 
     .bg-img h1 {
         font-size: 25px;
+        text-align: center;
     }
 
     .left-bar {
@@ -677,8 +678,8 @@ footer{
     .bg-btn1{
         margin: 0;
         border-radius: 5px;
-        width: 5em;
-        height: 4em;
+        width: 4em;
+        height: 3em;
     }
     
     .vs-info {
@@ -687,7 +688,7 @@ footer{
     .input-lang {
         width: 6em;
         height: 1.5em;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .phone-size:focus{

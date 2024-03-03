@@ -55,6 +55,11 @@ btn[0].addEventListener("mouseout", function(){
 
 inputForSearch[0].addEventListener("click", function() {
     bar.classList.remove('right-bar');
+    btn[0].classList.remove("bg-btn2");
+
+    for(let i = 0; i < btn[0].childElementCount; i++){
+        btn[0].children[i].classList.remove("three-lines-color");
+    }
     document.querySelector('.dark-bg-off').classList.remove('dark-bg-on');
     searchPage.classList.remove("hide-input-info");
     document.querySelector("header").style.zIndex = "8";
