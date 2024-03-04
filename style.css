@@ -1,24 +1,582 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
+    position: relative;
+    color: rgb(223, 223, 223);
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    position: relative;
     margin: 0;
-    background: #222222;
+    background: #0f0f0f;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-img{
-    width: 50px;
-    height: 50px;
+img {
+    height: 200px;
+    width: 200px;
 }
 
-.php{
-    height: 50px;
-    width: 70px;
+.scroll-down {
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-self: centera;
+    align-items: center;
+    width: 4em;
+    height: 4em;
+    background: rgb(223, 223, 223);
+    border-radius: 50px;
+    z-index: 1;
 }
 
-header{
+.scroll-down img {
+    width: 60px;
+    height: 60px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.main-information {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    transition: 0.1s;
+    /* height: 20em; */
+    border-radius: 10px;
+    /* flex-direction: column; */
+    border: 1px solid white;
+    margin: 10px 0;
+    background: #0c0c0c;
+}
+
+.main-information img {
+    margin-top: 20px;
+}
+
+.main-information div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 3px;
-    background: #7752FE;
-    flex-direction: row;
-    border: 1px solid black;
+}
+
+.info {
+    display: flex;
+    border: 1px solid white;
+    height: 10em;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-to-lang {
+    transition: 0.1s;
+    color: rgb(223, 223, 223);
+    text-decoration: none;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 10em;
+    height: 3em;
+    border-radius: 10px;
+    align-self: flex-end;
+    /* justify-self: end;  */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.link-to-lang:hover {
+    transform: translateY(-10px);
+}
+
+/*--------------*/
+
+.c-bg{
+    box-shadow: 0 0 10px 1px #3949ab;
+    border: 1px solid #3949ab;
+}
+
+.c-bg:hover {
+    box-shadow: 0 0 15px 4px #3949ab;
+}
+
+.c-bg img {
+    filter: drop-shadow(0 0 13px #3949ab);
+}
+
+/*--------------*/
+
+.cpp-bg{
+    box-shadow: 0 0 10px 1px #0080cd;
+    border: 1px solid #0080cd;
+}
+
+.cpp-bg:hover {
+    box-shadow: 0 0 15px 4px #0080cd;
+}
+
+.cpp-bg img {
+    filter: drop-shadow(0 0 13px #0080cd);
+}
+
+/*--------------*/
+
+.cs-bg{
+    box-shadow: 0 0 10px 1px #390092;
+    border: 1px solid #390092;
+}
+
+.cs-bg:hover {
+    box-shadow: 0 0 15px 4px #390092;
+}
+
+.cs-bg img {
+    filter: drop-shadow(0 0 13px #390092);
+}
+
+/*--------------*/
+
+.java-bg{
+    box-shadow: 0 0 10px 1px #e11e21;
+    border: 1px solid #e11e21;
+}
+
+.java-bg:hover {
+    box-shadow: 0 0 15px 4px #0a6eb6;
+    border: 1px solid #0a6eb6;
+}
+
+.java-bg img {
+    filter: drop-shadow(0 0 13px #e11e21);
+}
+
+/*--------------*/
+
+.js-bg{
+    box-shadow: 0 0 10px 1px #e4bd00;
+    border: 1px solid #e4bd00;
+}
+
+.js-bg:hover {
+    box-shadow: 0 0 15px 4px #e4bd00;
+}
+
+.js-bg img {
+    filter: drop-shadow(0 0 13px #e4bd00);
+}
+
+/*--------------*/
+
+.php-bg{
+    box-shadow: 0 0 10px 1px #777bb3;
+    border: 1px solid #777bb3;
+}
+
+.php-bg:hover {
+    box-shadow: 0 0 15px 4px #777bb3;
+}
+
+.php-bg img {
+    filter: drop-shadow(0 0 13px #777bb3);
+}
+
+/*--------------*/
+
+.kt-bg{
+    box-shadow: 0 0 10px 1px #8c60ff;
+    border: 1px solid #8c60ff;
+}
+
+.kt-bg:hover {
+    box-shadow: 0 0 15px 4px #ec783d;
+    border: 1px solid #ec783d;
+}
+
+.kt-bg img {
+    filter: drop-shadow(0 0 13px #8c60ff);
+}
+
+/*--------------*/
+
+.rust-bg{
+    box-shadow: 0 0 10px 1px #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.rust-bg:hover {
+    box-shadow: 0 0 15px 4px #ffffff;
+}
+
+.rust-bg img {
+    filter: drop-shadow(0 0 13px #ffffff);
+}
+
+/*--------------*/
+
+.swift-bg{
+    box-shadow: 0 0 10px 1px #f46f39;
+    border: 1px solid #f46f39;
+}
+
+.swift-bg:hover {
+    box-shadow: 0 0 15px 4px #f46f39;
+}
+
+.swift-bg img {
+    filter: drop-shadow(0 0 13px #f46f39);
+}
+
+/*--------------*/
+
+.ruby-bg{
+    box-shadow: 0 0 10px 1px #ec1622;
+    border: 1px solid #ec1622;
+}
+
+.ruby-bg:hover {
+    box-shadow: 0 0 15px 4px #ec1622;
+}
+
+.ruby-bg img {
+    filter: drop-shadow(0 0 13px #ec1622);
+}
+
+/*--------------*/
+
+.python-bg{
+    box-shadow: 0 0 10px 1px #377ef0;
+    border: 1px solid #377ef0;
+}
+
+.python-bg:hover {
+    box-shadow: 0 0 15px 4px #f8c63d;
+    border: 1px solid #f8c63d;
+}
+
+.python-bg img {
+    filter: drop-shadow(0 0 13px #377ef0);
+}
+
+/*--------------*/
+
+.go-bg{
+    box-shadow: 0 0 10px 1px #2dbcaf;
+    border: 1px solid #2dbcaf;
+}
+
+.go-bg:hover {
+    box-shadow: 0 0 15px 4px #2dbcaf;
+}
+
+.go-bg img {
+    filter: drop-shadow(0 0 13px #2dbcaf);
+}
+
+/*--------------*/
+
+.scala-bg{
+    box-shadow: 0 0 10px 1px #c20000;
+    border: 1px solid #c20000;
+}
+
+.scala-bg:hover {
+    box-shadow: 0 0 15px 4px #c20000;
+}
+
+.scala-bg img {
+    filter: drop-shadow(0 0 13px #c20000);
+}
+
+/*--------------*/
+
+.obj-c-bg{
+    box-shadow: 0 0 10px 1px #f1592a;
+    border: 1px solid #f1592a;
+}
+
+.obj-c-bg:hover {
+    box-shadow: 0 0 15px 4px #f1592a;
+}
+
+.obj-c-bg img {
+    filter: drop-shadow(0 0 13px #f1592a);
+}
+
+/*--------------*/
+
+.compare-bg {
+    align-self: flex-start;
+    width: 40em;
+    height: 10em;
+    margin-left: 2.5%;
+    box-shadow: 0 0 10px 1px #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.compare-bg:hover {
+    box-shadow: 0 0 15px 4px #ffffff;
+}
+
+.compare-bg a {
+    border: #ffffff;
+    box-shadow: 0 0 10px 2px #ffffff inset, 0 0 10px 2px #ffffff;
+}
+
+.compare-bg a:hover {
+    color: black;
+    background: #ffffff;
+}
+
+/*--------------*/
+
+/*----------------------------*/
+
+/*--------------*/
+
+.c {
+    border: #3949ab;
+    box-shadow: 0 0 10px 2px #3949ab inset, 0 0 10px 2px #3949ab;
+}
+
+.c:hover{
+    background: #3949ab;
+}
+
+/*--------------*/
+
+.cpp {
+    border: #0080cd;
+    box-shadow: 0 0 10px 2px #0080cd inset, 0 0 10px 2px #0080cd;
+}
+
+.cpp:hover{
+    background: #0080cd;
+}
+
+/*--------------*/
+
+.cs {
+    border: #390092;
+    box-shadow: 0 0 10px 2px #390092 inset, 0 0 10px 2px #390092;
+}
+
+.cs:hover{
+    background: #390092;
+}
+
+/*--------------*/
+
+.java {
+    border: #e11e21;
+    box-shadow: 0 0 10px 2px #e11e21 inset, 0 0 10px 2px #e11e21;
+}
+
+.java:hover{
+    background: #0a6eb6;
+    border: #0a6eb6;
+    box-shadow: 0 0 10px 2px #0a6eb6 inset, 0 0 10px 2px #0a6eb6;
+}
+
+/*--------------*/
+
+.js {
+    border: #e4bd00;
+    box-shadow: 0 0 10px 2px #e4bd00 inset, 0 0 10px 2px #e4bd00;
+}
+
+.js:hover{
+    background: #e4bd00;
+}
+
+/*--------------*/
+
+.php {
+    border: #777bb3;
+    box-shadow: 0 0 10px 2px #777bb3 inset, 0 0 10px 2px #777bb3;
+}
+
+.php:hover{
+    background: #777bb3;
+}
+
+/*--------------*/
+
+.kt {
+    border: #8c60ff;
+    box-shadow: 0 0 10px 2px #8c60ff inset, 0 0 10px 2px #8c60ff;
+}
+
+.kt:hover{
+    background: #ec783d;
+    border: #ec783d;
+    box-shadow: 0 0 10px 2px #ec783d inset, 0 0 10px 2px #ec783d;
+}
+
+/*--------------*/
+
+.rust {
+    border: #ffffff;
+    box-shadow: 0 0 10px 2px #ffffff inset, 0 0 10px 2px #ffffff;
+}
+
+.rust:hover{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+/*--------------*/
+
+.swift {
+    border: #f46f39;
+    box-shadow: 0 0 10px 2px #f46f39 inset, 0 0 10px 2px #f46f39;
+}
+
+.swift:hover{
+    background: #f46f39;
+}
+
+/*--------------*/
+
+.ruby {
+    border: #ec1622;
+    box-shadow: 0 0 10px 2px #ec1622 inset, 0 0 10px 2px #ec1622;
+}
+
+.ruby:hover{
+    background: #ec1622;
+}
+
+/*--------------*/
+
+.python {
+    border: #377ef0;
+    box-shadow: 0 0 10px 2px #377ef0 inset, 0 0 10px 2px #377ef0;
+}
+
+.python:hover{
+    background: #f8c63d;
+    border: #f8c63d;
+    box-shadow: 0 0 10px 2px #f8c63d inset, 0 0 10px 2px #f8c63d;
+    color: black;
+}
+
+/*--------------*/
+
+.go {
+    border: #2dbcaf;
+    box-shadow: 0 0 10px 2px #2dbcaf inset, 0 0 10px 2px #2dbcaf;
+}
+
+.go:hover{
+    background: #2dbcaf;
+}
+
+/*--------------*/
+
+.scala {
+    border: #c20000;
+    box-shadow: 0 0 10px 2px #c20000 inset, 0 0 10px 2px #c20000;
+}
+
+.scala:hover{
+    background: #c20000;
+}
+
+/*--------------*/
+
+.obj-c {
+    border: #f1592a;
+    box-shadow: 0 0 10px 2px #f1592a inset, 0 0 10px 2px #f1592a;
+}
+
+.obj-c:hover{
+    background: #f1592a;
+}
+
+/*--------------*/
+
+footer{
+    display: flex;
+    position: relative;
+    left: 0;
+    right: 0;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 10vh;
+    margin-top: 5em;
+    font-size: 12px;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 1900px) {
+    .info {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .info {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+
+    h1{
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+    
+    .main-information{
+        flex-direction: column;
+        text-align: center;
+        height: 40em;
+    }
+
+    .main-information div{
+        font-size: 12px;
+        width: 90%;
+        height: 20em;
+    }
+
+
+    .info p {
+        /* width: 100em; */
+    }
+
+    .compare-bg {
+        width: 95%;
+        height: 15em;
+        align-items: center;
+        justify-content: center;
+    }
+
+
 }
