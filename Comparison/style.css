@@ -501,7 +501,7 @@ strong {
     /* display: none; */
     position: absolute;
     background: rgba(0, 0, 0, 50%);
-    z-index: 2;
+    z-index: 1;
     /* border: 1px solid white; */
     width: 37.5em;
     height: 70px;
