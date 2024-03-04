@@ -615,6 +615,16 @@ footer{
 
 @media screen and (max-width: 1400px) {
 
+
+    .first-part-of-header {
+        justify-content: start;
+    }
+
+    .first-part-of-header a {
+        margin-left: 10px;
+        width: 70px;
+    }
+
     .search-page-bg{
         padding-top: 6em;
     }
