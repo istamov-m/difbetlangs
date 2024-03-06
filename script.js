@@ -33,3 +33,27 @@ document.querySelector(".kt-bg").addEventListener("mouseover", function(){
 document.querySelector(".rust-bg").addEventListener("mouseover", function(){
     document.querySelector(".scroll-down").classList.remove("hide")
 })
+
+document.querySelector(".swift-bg").addEventListener("mouseover", function(){
+    document.querySelector(".scroll-down").classList.remove("hide")
+})
+
+document.querySelector(".ruby-bg").addEventListener("mouseover", function(){
+    document.querySelector(".scroll-down").classList.remove("hide")
+})
+
+document.querySelector(".python-bg").addEventListener("mouseover", function(){
+    document.querySelector(".scroll-down").classList.add("hide")
+})
+
+document.querySelector(".go-bg").addEventListener("mouseover", function(){
+    document.querySelector(".scroll-down").classList.add("hide")
+})
+
+document.querySelector(".scala-bg").addEventListener("mouseover", function(){
+    document.querySelector(".scroll-down").classList.add("hide")
+})
+
+document.querySelector(".obj-c-bg").addEventListener("mouseover", function(){
+    document.querySelector(".scroll-down").classList.add("hide")
+})
