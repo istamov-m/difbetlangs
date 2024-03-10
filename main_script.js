@@ -19,6 +19,7 @@ let infoForInput = document.querySelectorAll(".info");
 let searchPage = document.querySelector(".search-page-bg");
 let bar = document.getElementById('left-bar');
 
+// .-.- / .-.- .-- .-.. .-.- ..-- ... -..- / -. .- ... - --- .-.- --.- .. -- / .- .-- - --- .-. --- -- / ... .- .--- - .- / .. / -. .. -.- - --- / . --. --- / -. . / -.. . .-.. .- .-.. --..-- / -.- .-. --- -- . / -.- .- -.- / .-.- .-.-.- / -- --- . / .. -- .-.- / -- ..- -... --- .-. .. --.. / .. ... - .- -- --- .--
 
 for(let i = 0; i < btn.length; i++) // появление левой панели
 {
@@ -39,8 +40,8 @@ btn[0].addEventListener("click", function(){
 
 
 btn[0].addEventListener("mouseover", function(){
-    // btn[0].children.forEach(elements => {
-    //     elements.classList.add("three-lines");
+    // btn[0].children.forEach(elements => { .-.- / .-.- .-- .-.. .-.- ..-- ... -..- / -. .- ... - --- .-.- --.- .. -- / .- .-- - --- .-. --- -- / ... .- .--- - .- / .. / -. .. -.- - --- / . --. --- / -. . / -.. . .-.. .- .-.. --..-- / -.- .-. --- -- . / -.- .- -.- / .-.- .-.-.- / -- --- . / .. -- .-.- / -- ..- -... --- .-. .. --.. / .. ... - .- -- --- .--
+    //     elements.classList.add("three-lines"); .-.- / .-.- .-- .-.. .-.- ..-- ... -..- / -. .- ... - --- .-.- --.- .. -- / .- .-- - --- .-. --- -- / ... .- .--- - .- / .. / -. .. -.- - --- / . --. --- / -. . / -.. . .-.. .- .-.. --..-- / -.- .-. --- -- . / -.- .- -.- / .-.- .-.-.- / -- --- . / .. -- .-.- / -- ..- -... --- .-. .. --.. / .. ... - .- -- --- .--
     // })
     for(let i = 0; i < btn[0].childElementCount; i++){
         btn[0].children[i].classList.add("three-lines");
@@ -63,7 +64,7 @@ inputForSearch[0].addEventListener("click", function() {
     document.querySelector('.dark-bg-off').classList.remove('dark-bg-on');
     searchPage.classList.remove("hide-input-info");
     document.querySelector("header").style.zIndex = "8";
-})
+})//.-.- / .-.- .-- .-.. .-.- ..-- ... -..- / -. .- ... - --- .-.- --.- .. -- / .- .-- - --- .-. --- -- / ... .- .--- - .- / .. / -. .. -.- - --- / . --. --- / -. . / -.. . .-.. .- .-.. --..-- / -.- .-. --- -- . / -.- .- -.- / .-.- .-.-.- / -- --- . / .. -- .-.- / -- ..- -... --- .-. .. --.. / .. ... - .- -- --- .--
 
 searchPage.addEventListener("click", function(){
     searchPage.classList.add("hide-input-info");
@@ -98,9 +99,11 @@ inputForSearch[1].addEventListener("input", (e) => { // поиск
     })
 })
 
+//.-.- / .-.- .-- .-.. .-.- ..-- ... -..- / -. .- ... - --- .-.- --.- .. -- / .- .-- - --- .-. --- -- / ... .- .--- - .- / .. / -. .. -.- - --- / . --. --- / -. . / -.. . .-.. .- .-.. --..-- / -.- .-. --- -- . / -.- .- -.- / .-.- .-.-.- / -- --- . / .. -- .-.- / -- ..- -... --- .-. .. --.. / .. ... - .- -- --- .--
+
 
 let getInfo = document.querySelectorAll(".short-hide");
-let btnInfo = document.querySelectorAll(".btn-lang");
+let btnInfo = document.querySelectorAll(".btn-lang"); //.-.- / .-.- .-- .-.. .-.- ..-- ... -..- / -. .- ... - --- .-.- --.- .. -- / .- .-- - --- .-. --- -- / ... .- .--- - .- / .. / -. .. -.- - --- / . --. --- / -. . / -.. . .-.. .- .-.. --..-- / -.- .-. --- -- . / -.- .- -.- / .-.- .-.-.- / -- --- . / .. -- .-.- / -- ..- -... --- .-. .. --.. / .. ... - .- -- --- .--
 
 function CleanAll(){
     for(let i = 0; i < btnInfo.length; i++)
